@@ -67,6 +67,83 @@
             </nav>
         </div>
     </header>
+    <main>
+        <section class="top">
+            <img src="./img/rv-camping-on-side-of-lake-istock.webp" alt="Banner" class="background" style="background-position: center; background-repeat: no-repeat; background-size: cover; width: 100%; height: 60vh;">
+            <div class="container-fluid banner-text">
+                <h1 style="text-align: center;">Camper Van Rental<br />
+                    <strong>Vancouver BC, Canada</strong>
+                </h1>
+            </div>
+        </section>
+        <!-- datepicker -->
+        
+        <div class="date-reservation">
+            <div class="container">
+                <p>
+                    <div class="reservation_box">
+                        <strong>When are you going?</strong>
+                        <br>
+                        <form action="/avaiabledatescheck.html" method="POST">
+                            <input type="date" id="pick_up" name="pick_up" value="" placeholder="Pick up date" required>
+                            <input type="date" id="return" name="return" value="" placeholder="Return date" required>
+                            <button href="#" class="btn btn-primary">Search</button>
+                            <div class="hidden-calendar" id="daterangepickerHp"></div>
+                        </form>
+                        <br>
+                        <p class="text-center py-0 my-0">
+                            <small></small>
+                        </p>
+                    </div>
+                    <div class="form-group my-2">
+                        <div class="input-group my-2">
+                            <label for="adults" class="input-group-text col-2">Adults</label>
+                            <button type="button" class="btn btn-primary btn-sm btn-circle" data-target="adults" data-action="decrease">
+                                <span class="fa fa-minus"></span>
+                            </button>
+                            <input type="text" class="form-control simple-border" name="adults" value="1" style="width: 20%;">
+                            <button type="button" class="btn btn-primary btn-sm btn-circle" data-target="adults" data-action="increase">
+                                <span class="fa fa-plus"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="form-group my-2">
+                        <div class="input-group my-2">
+                            <label for="children" class="input-group-text col-2">Children</label>
+                            <button type="button" class="btn btn-primary btn-sm btn-circle" data-target="children" data-action="decrease">
+                                <span class="fa fa-minus"></span>
+                            </button>
+                            <input type="text" class="form-control simple-border" pattern="\d*" name="children" value="0" style="width:20%;">
+                            <button type="button" class="btn btn-primary btn-sm btn-circle" data-target="children" data-action="increase">
+                                <span class="fa fa-plus"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="form-group my-2">
+                        <div class="input-group my-2" id="pets">
+                            <label for="pets" class="input-group-text col-4">Pets</label>
+                            <div class="d-inline input-radio-wrapper pets-wrapper">
+                                <input id="pets_no" type="radio" name="pets" value="No" checked>
+                                <label for="pets_no">No</label>
+                            </div>
+                            <div class="d-inline input-radio-wrapper">
+                                <input id="pets_yes" type="radio" name="pets" value="Yes">
+                                <label for="pets_yes">Yes</label>
+                            </div>
+                        </div>
+                    </div>
+                </p>
+            </div>
+        </div>
+        <section class="about">
+            <article>
+              <h2>About Us</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a lacinia arcu, ac efficitur lorem. Nam ut fermentum odio. Fusce euismod felis ut mauris tincidunt, eget euismod massa efficitur. Sed hendrerit, sapien eu dignissim tempus, libero eros ultricies massa, ut bibendum eros tellus vel nisl. Nam volutpat elit elit, at dictum metus euismod eget. Aliquam erat volutpat. In hac habitasse platea dictumst.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, nobis placeat! Quam ipsam eaque amet cupiditate nemo magnam obcaecati eligendi iusto voluptates! Voluptates, aliquam ea excepturi quo illo maxime deserunt laborum tempora culpa et optio itaque laboriosam laudantium cum nihil! Voluptate ratione aliquam modi corrupti saepe eum aperiam voluptatum ipsa!</p>
+              <a href="#" class="More">Learn More</a>
+            </article>
+        </section>    
+    </main>
 
     <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
