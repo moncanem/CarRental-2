@@ -1,0 +1,23 @@
+@mixin flexColumn($row-gap) {
+    display: flex;
+    flex-direction: column;
+    row-gap: $row-gap;
+}
+
+@mixin flexCenter{
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flexCenterAll {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+@mixin flexGlobal($rowGap) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    row-gap: $rowGap;
+}
