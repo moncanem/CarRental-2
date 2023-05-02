@@ -32,4 +32,206 @@ header {
 
 ul {
   list-style: none;
+}
+
+main,
+main > section,
+main > section > article,
+footer,
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  height: 30vh;
+  background-image: url("/img/where-rent-rv-rvshare.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  position: relative;
+}
+.top > .banner-text {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  color: white;
+  background-color: rgba(135, 130, 130, 0.3);
+}
+
+@media (min-width: 300px) {
+  header {
+    height: 10vh;
+  }
+  nav {
+    display: flex;
+    height: 60px;
+    padding: 10px;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .navlogo img {
+    width: 8vw;
+    height: 7vh;
+  }
+  ul.nav {
+    display: none;
+  }
+  details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: end;
+    z-index: 1;
+    position: relative;
+    top: 10%;
+    left: 0;
+    right: 0;
+    background-color: white;
+    padding: 10px;
+  }
+  details > .nav-summary {
+    font-size: 14px;
+    font-weight: 400;
+    background-color: white;
+    color: #007bff;
+  }
+  .container-fluid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 5px;
+  }
+  .banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .banner-text h1 {
+    font-size: 32px;
+    font-weight: 800;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  .banner-text strong {
+    font-size: 20px;
+    font-weight: 400;
+  }
+  /* datepicker */
+  .date-reservation {
+    background-color: #469597;
+    padding: 50px 0;
+  }
+  .reservation_box {
+    padding: 10px;
+    max-width: 800px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .reservation_box strong {
+    font-size: 16px;
+  }
+  .reservation_box input[type=date] {
+    padding: 5px;
+    font-size: 14px;
+  }
+  .reservation_box button {
+    align-items: center;
+    margin-left: 2%;
+  }
+  .hidden-calendar {
+    display: block;
+  }
+  .form-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .input-group {
+    max-width: 200px;
+    border: 1px solid #BBC6C8;
+    border-radius: 5px;
+  }
+  .input-group > label {
+    font-size: 13px;
+    display: flex;
+    padding: 2px;
+    width: 20%;
+    background-color: white;
+  }
+  #pets {
+    font-size: 14px;
+    -moz-column-gap: 2vh;
+         column-gap: 2vh;
+  }
+  .about {
+    align-items: center;
+    text-align: justify;
+    justify-content: center;
+    width: 100%;
+    row-gap: 4vh;
+    padding: 3vh;
+  }
+  footer {
+    background-color: #f2f2f2;
+    padding: 20px 0;
+    font-size: 16px;
+    color: #555;
+    text-align: center;
+  }
+  footer > section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .fa-brands {
+    display: inline-block;
+    font-size: 22px;
+    color: #555;
+    padding: 2vh;
+    transition: color 0.3s ease-in-out;
+    text-decoration: none;
+  }
+  .fa-brands:hover {
+    color: #469597;
+  }
+  .icon a {
+    text-decoration: none;
+    color: black;
+    /* margin: 0 10px; */
+    padding: 1%;
+    transition: color 0.3s ease-in-out;
+  }
+  .icon a:hover {
+    color: #469597;
+  }
+  .book {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.4s;
+  }
+  .book:hover {
+    background-color: #E5E3E4;
+    border-radius: 15px;
+  }
 }/*# sourceMappingURL=style.css.map */

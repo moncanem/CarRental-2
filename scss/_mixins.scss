@@ -1,7 +1,6 @@
-@mixin flexColumn($row-gap) {
+@mixin flexColumn {
     display: flex;
     flex-direction: column;
-    row-gap: $row-gap;
 }
 
 @mixin flexCenter{

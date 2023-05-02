@@ -34,3 +34,32 @@ ul {
   list-style: none;
 }
 
+main,
+main > section,
+main > section > article,
+footer,
+form {
+    @include flexColumn;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
+    background-image: url('/img/where-rent-rv-rvshare.png');
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover; 
+    width: 100%; 
+    position: relative;
+
+    > .banner-text {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        color: white;
+        background-color: rgba(135, 130, 130, 0.3); 
+    }
+}
