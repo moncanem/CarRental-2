@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: $fontFamily;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    
+}
+
+p {
+    color: dimgray;
+    line-height: 1.5;
+}
+ 
+html,
+body {
+    height: 100%;
+    font-size: 16px;
+    color: #333;
+}
+
+header {
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+  list-style: none;
+}
+
