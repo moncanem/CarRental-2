@@ -14,7 +14,7 @@
         <section class="login" id="login">
             <h1>Login</h1>
             <form action="#" id="loginForm">
-                <input type="email" name="email" placeholder="Enter your Email" id="email"/>
+                <input type="email" name="email" placeholder="Enter your Email" autofocus id="email"/>
                 <input type="password" name="password" id="password" placeholder="Enter your Password"/>
                 <button class="show">Show Password</button>
                 <button type="submit">Login</button>
@@ -34,16 +34,16 @@
 
         <section class="sign" id="sign" style="display: none;">
             <h1>Sign In Now </h1>
-            <form action="#" method="get">
-                <input type="text" placeholder="Enter your Name"/>
-                <input type="email" placeholder="Email"/>
+            <form action="#" method="get" id="signForm">
+                <input type="text" placeholder="Enter your Name" id="infoName"/>
+                <input type="email" placeholder="Email" id="infoEmail"/>
                 <input type="password" name="password" id="1-password" placeholder="Create your Password"/>
                 <input type="password" name="password" id="2-password" placeholder="Confirm your Password"/>
                 <button class="show">Show Password</button>
+                <section>
+                    <button class="log" id="btnSign" type="submit">Create Account</button>
+                </section>
             </form>
-            <section>
-                <button class="log" id="btnSign">Create Your Account</button>
-            </section>
         </section>
 
     </main>
