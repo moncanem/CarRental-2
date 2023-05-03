@@ -1,12 +1,12 @@
 let btnCreate = document.querySelector("#create");
-let login = document.querySelector("#login");
-let sign = document.querySelector("#sign")
-let btnSign = document.querySelector("#btnSign");
+let btnCancel = document.querySelector(".cancel")
+// let login = document.querySelector("#login");
+// let sign = document.querySelector("#sign")
+// let btnSign = document.querySelector("#btnSign");
 let loginForm = document.querySelector("#loginForm")
 let SignForm = document.querySelector("#signForm")
 let password = document.querySelector("#password");
 let email = document.querySelector("#email");
-
 
 
 // Function to show and hide the password
@@ -30,8 +30,14 @@ $('.show').click((e)=>{
 // functions to show and hide the sections when clicked the button
 btnCreate.addEventListener("click", (e)=>{
     e.preventDefault();
-    $(login).hide();
-    $(sign).show();
+    $("#login").hide();
+    $("#sign").show();
+});
+
+btnCancel.addEventListener("click",(e)=>{
+    e.preventDefault();
+    $("#login").show();
+    $("#sign").hide();
 });
 
 // function to storage the user information
@@ -75,24 +81,13 @@ SignForm.addEventListener("submit",(e)=>{
         $("#2-password").removeClass("inputRed");
 
     if($("#1-password").val() != $("#2-password").val()){
-        console.log("no");
         $("#1-password").addClass("inputRed");
         $("#2-password").addClass("inputRed");
+        $(".warning").show();
     }else{
-        console.log("yes");
         $("#1-password").removeClass("inputRed");
         $("#2-password").removeClass("inputRed");
-
+        $(".warning").hide();
     }
-
-
-        // btnSign.innerHTML="Continue";
-        // $(login).show();
-        // $(sign).hide();
-        // btnSign.addEventListener("click",(e)=>{
-        //     e.preventDefault();
-        //     // $(login).show();
-        //     // $(sign).hide();
-        // });
     }
-})
+});
