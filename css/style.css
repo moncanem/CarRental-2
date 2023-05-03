@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(/CarRental-2/img/pexels-yara-alana-16386642.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    display: flex;
+    column-gap: 5vh;
+}
+
+
+.login{
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 5%;
+    height: 65vh;
+    width: 45vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 4vh;
+}
+
+.sign  {
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 5%;
+    height: 65vh;
+    width: 45vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 7vh;
+}
+
+.sign-none{
+    display: none;
+}
+
+button{
+    width: 20vh;
+    padding: 4%;
+    border-radius: 12px;
+    border: 1px solid white;
+    background-color: #A6C4C5;
+    font-weight: 400;
+    transition: .4s;
+}
+
+button:hover{
+    cursor: pointer;
+    color: whitesmoke;
+    border: 1px solid black;
+}
+
+input{
+    padding: 5%;
+    border: 1px solid black;
+    border-radius: 12px;
+    width: 30vh;
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, .3);
+}
+
+input:focus{
+    outline: 1px solid #288990;
+}
+
+.inputRed{
+    border: 1px solid red;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2vh;
+}
+
+::placeholder{
+    color: black;
+}
+
+.create{
+    padding: 6%;
+    width: 25vh;
+    background-color: #288990;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    column-gap: 5vh;
+}
+
+.icons{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vh;
+}
+
+a{
+    border: 1px solid black;
+    border-radius: 50%;
+    height: 5vh;
+    width: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    transition: .6s;
+}
+
+a:hover{
+    background-color: black;
+    color: white;
+}

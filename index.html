@@ -7,15 +7,49 @@
     <title>Car Rental</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/CarRental-2/css/style.css">
 </head>
 <body>
-    <div id="root">
+    <main>
+        <section class="login" id="login">
+            <h1>Login</h1>
+            <form action="#" id="loginForm">
+                <input type="email" name="email" placeholder="Enter your Email" id="email"/>
+                <input type="password" name="password" id="password" placeholder="Enter your Password"/>
+                <button class="show">Show Password</button>
+                <button type="submit">Login</button>
+            </form>
+            <section class="icons">
+                <h4>Or Login with</h4>
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-google"></i></a></li>
+                </ul>
+            </section>
+            <section>
+                <button class="create" id="create">Create Your Account</button>
+            </section>
+        </section>
 
-    </div>
-    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-    <script crossorigin src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-    <script src="/js/script.js" type="text/babel"></script>
+
+        <section class="sign" id="sign" style="display: none;">
+            <h1>Sign In Now </h1>
+            <form action="#" method="get">
+                <input type="text" placeholder="Enter your Name"/>
+                <input type="email" placeholder="Email"/>
+                <input type="password" name="password" id="1-password" placeholder="Create your Password"/>
+                <input type="password" name="password" id="2-password" placeholder="Confirm your Password"/>
+                <button class="show">Show Password</button>
+            </form>
+            <section>
+                <button class="log" id="btnSign">Create Your Account</button>
+            </section>
+        </section>
+
+    </main>
+</body>
+<script type="module" src="/CarRental-2/js/script.js">
+
+</script>
 </body>
 </html>
