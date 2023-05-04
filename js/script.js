@@ -1,3 +1,5 @@
+import Users from "./users.js";
+
 let btnCreate = document.querySelector("#create");
 let btnCancel = document.querySelector(".cancel")
 // let login = document.querySelector("#login");
@@ -16,7 +18,6 @@ $('.show').click((e)=>{
         $("#password").attr("type","text");
         $("#1-password").attr("type","text");
         $("#2-password").attr("type","text");
-
         $(e.target).text("Hide Password");
     }else{
         $("#password").attr("type","password");
@@ -45,8 +46,8 @@ loginForm.addEventListener("submit",(e)=>{
     e.preventDefault();
     let info = null;
     const fd = new FormData(loginForm);
-    for(info of fd){
-        console.log(info);
+    for( let info of fd){
+        // console.log(info);
     };
     let json = JSON.stringify(info)
     localStorage.setItem('#loginForm', json);
@@ -57,16 +58,46 @@ loginForm.addEventListener("submit",(e)=>{
     if (emailInfo == "" && passwordInfo == "") {
         email.classList.add("inputRed");
         password.classList.add("inputRed");
+
     } else {
         email.classList.remove("inputRed");
         password.classList.remove("inputRed");
     }
-});
+    // it is going to check if the email and password that users is placing, is in jsonFile 
+    let userExist = false;
+    let passwordExist = false;
+        for(let user of userList){
+            // console.log(user.password);
+            if ($("#email").val() == user.email){
+                userExist = true;
+            }
+            if ($("#password").val() == user.password){
+                passwordExist = true;
+            
+            }
+        }
+        if(userExist){
+            console.log("yes");
+            $(".warning").hide();$("#login").css({"height":"70vh"});
+        } else {
+            console.log("no");
+            $(".warning").show();$("#login").css({"height":"72vh"});
 
-// for(let inpt of inputElements) {
-    
-// }   
+        }
+        if (passwordExist){
+            console.log("yes");
+            $(".warning").hide();$("#login").css({"height":"70vh"});
+        } else {
+            console.log("no");
+            $(".warning").show();$("#login").css({"height":"72vh"});
 
+        }
+    });
+;
+
+
+
+// turn the color of the input to red if there is no info in it.
 SignForm.addEventListener("submit",(e)=>{
     e.preventDefault();
     if($("#infoName").val() == "" && $("#infoEmail").val() == "" && $("#1-password").val() == "" && $("#2-password").val() == ""){
@@ -84,10 +115,35 @@ SignForm.addEventListener("submit",(e)=>{
         $("#1-password").addClass("inputRed");
         $("#2-password").addClass("inputRed");
         $(".warning").show();
+        $("#sign").css({"height":"72vh"});
     }else{
         $("#1-password").removeClass("inputRed");
         $("#2-password").removeClass("inputRed");
         $(".warning").hide();
+        $("#sign").css({"height":"70vh"});
     }
     }
 });
+
+
+// get the json File 
+const urlCostumer = './data/users.json'
+
+jQuery.extend({
+    getJsonData: function(urlFile){
+        let result = null;
+        $.ajax({
+            docType: "json",
+            async: false,
+            type: "GET",
+            url: urlFile,
+            success: function(data){
+                result = data;
+            },
+        });
+        return result;
+    }
+});
+
+let userList = $.getJsonData(urlCostumer);
+// console.log(userList);
