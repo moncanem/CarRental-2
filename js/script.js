@@ -1,14 +1,19 @@
-function App() {
-    return (
-        <React.Fragment>
-            <HeaderPage />
-            <MainContent/>
-            <FooterContent/>
-        </React.Fragment>
-    );
-}
+let idx = 0;
+$('.mySlides ').eq(idx).fadeIn('slow');
+$('.next').click(()=>{
+    idx++;
+    if(idx == 3){
+        idx = 0
+    }
+    $('.mySlides ').hide();
+    $('.mySlides ').eq(idx).fadeIn('slow');
+})
 
-const rootHtml = ReactDOM.createRoot(
-    document.getElementById("root")
-);
-rootHtml.render(<App />);
+$(".prev").click(()=>{
+    idx--;
+    if(idx == -1){
+      idx = 2 
+    }
+    $(".mySlides ").hide();
+    $('.mySlides ').eq(idx).fadeIn('slow');
+});

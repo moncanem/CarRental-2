@@ -1,0 +1,82 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 5vh;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 9px;
+    border-bottom-left-radius: 9px;
+}
+
+.slideshow-container {
+    position: relative;
+
+}
+
+.mySlides {
+    width: 65vh;
+    height: 100%;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 40%;
+    padding: 16px;
+    color: white;
+    font-size: 18px;
+    transition: .6s;
+}
+
+.prev:hover, .next:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.next{
+    right: 0;
+}
+
+.container{
+    display: flex;
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 40vh;
+    width: 70%;
+}
+
+.base-information{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.information{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.base-information aside{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.second-information{
+    width: 40%;
+    display: flex;
+    column-gap: 5vh;
+}
+
+.car-information{
+    width: 80%;
+}
