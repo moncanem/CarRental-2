@@ -1,10 +1,10 @@
 @media (min-width: 700px){
     header {
-        height: 8vh;
-    }
 
-    a {
-        font-size: 16px;
+        a {
+            font-size: 16px;
+        }
+
     }
     
     .navlogo img {
@@ -53,7 +53,7 @@
     }
       
     .reservation_box {
-        max-width: 70vh;
+        width: 70vh;
         strong {
             font-size: 20px;
         }

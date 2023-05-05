@@ -47,7 +47,7 @@ form {
 .top {
   display: flex;
   flex-direction: column;
-  height: 30vh;
+  height: 40vh;
   background-image: url("/img/where-rent-rv-rvshare.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -67,13 +67,16 @@ form {
 
 @media (min-width: 300px) {
   header {
-    height: 10vh;
+    display: flex;
+    min-height: 10vh;
   }
-  a {
+  header a {
     font-size: 12px;
   }
   nav {
     display: flex;
+    align-items: center;
+    text-align: center;
     height: 60px;
     padding: 10px;
     width: 100%;
@@ -267,10 +270,7 @@ form {
   }
 }
 @media (min-width: 700px) {
-  header {
-    height: 8vh;
-  }
-  a {
+  header a {
     font-size: 16px;
   }
   .navlogo img {
@@ -309,7 +309,7 @@ form {
     padding: 30px;
   }
   .reservation_box {
-    max-width: 70vh;
+    width: 70vh;
   }
   .reservation_box strong {
     font-size: 20px;
@@ -363,5 +363,95 @@ form {
   }
   .book {
     font-size: 16px;
+  }
+}
+@media (min-width: 1000px) {
+  header {
+    height: 15vh;
+    padding: 3vh;
+  }
+  header a {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .navlogo img {
+    width: 8vw;
+    height: 11vh;
+  }
+  ul.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    -moz-column-gap: 3vh;
+         column-gap: 3vh;
+  }
+  details {
+    display: none;
+  }
+  .banner-text {
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  .banner-text h1 {
+    font-size: 60px;
+    font-weight: 900;
+  }
+  .banner-text strong {
+    font-size: 30px;
+    font-weight: 500;
+  }
+  /* datepicker */
+  .date-reservation {
+    padding: 20px;
+  }
+  .reservation_box {
+    padding: 20px;
+    width: 100%;
+  }
+  .reservation_box strong {
+    font-size: 20px;
+  }
+  .reservation_box input[type=date] {
+    padding: 16px;
+    font-size: 13px;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+  }
+  .reservation_box > form {
+    row-gap: 2vh;
+  }
+  .adults, .children {
+    width: 60%;
+  }
+  .pet {
+    width: 30%;
+  }
+  .input-group {
+    width: 60%;
+  }
+  .input-group > label {
+    align-items: center;
+    font-size: 15px;
+    width: 30%;
+  }
+  .about {
+    row-gap: 6vh;
+    padding: 6vh;
+  }
+  footer a {
+    font-size: 16px;
+  }
+  .fa-brands {
+    font-size: 32px;
+  }
+  .fa-brands:hover {
+    color: #469597;
+  }
+  .icon a {
+    transition: color 0.3s ease-in-out;
+    font-weight: 500;
+  }
+  .icon a:hover {
+    color: #469597;
   }
 }/*# sourceMappingURL=style.css.map */

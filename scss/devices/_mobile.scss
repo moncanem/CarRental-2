@@ -1,14 +1,17 @@
 @media (min-width: 300px) {
     header {
-        height: 10vh;
+        display: flex;
+        min-height: 10vh;
+        a {
+            font-size: 12px;
+        }
     }
 
-    a {
-        font-size: 12px;
-    }
 
     nav {
         display: flex;
+        align-items: center;
+        text-align: center;
         height: 60px;
         padding: 10px;
         width: 100%;
@@ -46,7 +49,7 @@
         }
         
     }
-    
+
     .container-fluid {
         display: flex;
         flex-direction: column;

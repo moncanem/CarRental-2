@@ -1,0 +1,116 @@
+@media (min-width: 1000px) {
+
+    header{
+        height: 15vh;
+        padding: 3vh;
+        a {
+            font-size: 20px;
+            font-weight: 600;
+        }
+    }
+
+    .navlogo img {
+        width: 8vw; 
+        height: 11vh;
+    }
+    
+    ul.nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        column-gap: 3vh;
+    }
+    
+    details {
+        display: none;   
+    }
+    
+    .banner-text { 
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        h1 {
+            font-size: 60px;
+            font-weight: 900;
+
+        }
+
+        strong {
+            font-size: 30px;
+            font-weight: 500;
+        }
+        
+    }
+    /* datepicker */
+    .date-reservation {
+        padding: 20px;
+    }
+      
+    .reservation_box {
+        padding: 20px;
+        width: 100%;  
+        strong {
+            font-size: 20px;
+        }
+
+        input[type="date"] {
+            padding: 16px;
+            font-size: 13px;
+            column-gap: 10px;
+            
+        }
+
+        > form {
+            row-gap: 2vh;
+        }
+    }
+      
+    .adults, .children {
+        width: 60%;
+    }
+
+    .pet {
+        width: 30%;
+        
+    }
+
+    .input-group {
+        width: 60%;
+
+        > label {
+            align-items: center;
+            font-size: 15px;
+            width: 30%;
+        }
+    }
+
+    .about{
+        row-gap: 6vh;
+        padding: 6vh;
+    }
+      
+    footer {
+        a {
+            font-size: 16px;
+        }
+    }
+
+    .fa-brands {
+        font-size: 32px;
+    }
+    
+    .fa-brands:hover {
+        color: #469597;
+    }
+    
+    .icon a {
+        transition: color 0.3s ease-in-out;
+        font-weight: 500;
+    }
+    
+    .icon a:hover {
+        color: #469597;
+    }
+
+
+     
+}
