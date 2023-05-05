@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "Car_Brand": "Mercedes-Benz",
+        "Car_Model": "Airstream Interstate 24X",
+        "Car_Model_Year": 2022,
+        "picture": "https://robbreport.com/wp-content/uploads/2021/12/Airstream-Interstate-24X-Front-Exterior-with-LED-Light-Bar-w7ifoz66n1.jpg?w=300"
+    },
+    {
+        "id": 2,
+        "Car_Brand": "Mercedes-Benz",
+        "Car_Model": "Jayco Terrain",
+        "Car_Model_Year": 2021,
+        "picture": "https://robbreport.com/wp-content/uploads/2021/12/jayco01.jpg?w=300"
+    },
+    {
+        "id": 3,
+        "Car_Brand": "Uncrate",
+        "Car_Model": "Loef Camper Van",
+        "Car_Model_Year": 2021,
+        "picture": "https://robbreport.com/wp-content/uploads/2021/12/loef01.jpg?w=300"
+    },
+    {
+        "id": 4,
+        "Car_Brand": "Fiat",
+        "Car_Model": "Ducato Base Camper Van",
+        "Car_Model_Year": 2021,
+        "picture": "https://robbreport.com/wp-content/uploads/2021/12/fiat01.jpg?w=300"
+    },
+    {
+        "id": 5,
+        "Car_Brand": "RAM",
+        "Car_Model": "Glampervan Promaster MUV",
+        "Car_Model_Year": 2023,
+        "picture": "https://robbreport.com/wp-content/uploads/2021/12/glampervan01.jpg?w=300"
+    },
+    {
+        "id": 6,
+        "Car_Brand": "Ford",
+        "Car_Model": "Ford Transit Trail",
+        "Car_Model_Year": 2023,
+        "picture": "https://robbreport.com/wp-content/uploads/2022/11/transittrail02.jpg?w=300"
+    },
+    {
+        "id": 7,
+        "Car_Brand": "Mercedes-Benz",
+        "Car_Model": "Thor Motor Coach Sanctuary",
+        "Car_Model_Year": 2021,
+        "picture": "https://robbreport.com/wp-content/uploads/2021/12/thor01.jpg?w=300"
+    },
+    {
+        "id": 8,
+        "Car_Brand": "RAM",
+        "Car_Model": "Winnebago Solis 59P",
+        "Car_Model_Year": 2022,
+        "picture": "https://images.prismic.io/indiecampers-demo/398f6b62-8e6e-4e7e-93a5-7e377adda20c_SO-9064-21.jpg?auto=compress,format&rect=0,0,3000,2001&w=2000&h=1334&q=30"
+    },
+    {
+        "id": 9,
+        "Car_Brand": "Jeep",
+        "Car_Model": "Wrangler UNLIMITED Sport/ Wrangler Night Eagle",
+        "Car_Model_Year": 2021,
+        "picture": "https://images.prismic.io/indiecampers-demo/0760a481-6c01-47ca-adfe-d24b8ce6daf1_Rocky+Page+Blur+made.jpg?auto=compress,format&rect=0,80,1890,1258&w=520&h=346 576w"
+    },
+    {
+        "id": 10,
+        "Car_Brand": "Fiat",
+        "Car_Model": "Fiat Ducato H3R-8",
+        "Car_Model_Year": 2023,
+        "picture": "https://images.prismic.io/indiecampers-demo/032d9e85-b811-4f06-b0ed-1ad286387fde_1100_R07_600_2021_02_2023+(3).jpg?auto=compress,format&rect=0,133,6297,4190&w=520&h=346 576w"
+    }
+]
