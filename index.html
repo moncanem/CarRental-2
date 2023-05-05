@@ -76,57 +76,59 @@
                 </h1>
             </div>
         </section>
+
         <!-- datepicker -->
-        
         <div class="date-reservation">
             <div class="container">
                 <p>
                     <div class="reservation_box">
                         <strong>When are you going?</strong>
                         <br>
-                        <form action="/avaiabledatescheck.html" method="POST">
+                        <form action="/avaiabledatescheck.html" id="booking-form" method="get" target="_blank">
+                            <!-- <label class="divider" for="date-in">From</label> -->
                             <input type="date" id="pick_up" name="pick_up" value="" placeholder="Pick up date" required>
                             <input type="date" id="return" name="return" value="" placeholder="Return date" required>
                             <button href="#" class="btn btn-primary">Search</button>
-                            <div class="hidden-calendar" id="daterangepickerHp"></div>
+                            <!-- <button type="submit" class="go booking-link tracking-link" value="" title="Find">search</button> -->
+                            <!-- <div class="hidden-calendar" id="daterangepickerHp"></div> -->
                         </form>
                         <br>
                         <p class="text-center py-0 my-0">
                             <small></small>
                         </p>
                     </div>
-                    <div class="form-group my-2">
+                    <div class="adults choose">
                         <div class="input-group my-2">
-                            <label for="adults" class="input-group-text col-2">Adults</label>
+                            <label for="adults" class="input-group-text col-2" id="input-group-text">Adults</label>
                             <button type="button" class="btn btn-primary btn-sm btn-circle" data-target="adults" data-action="decrease">
                                 <span class="fa fa-minus"></span>
                             </button>
-                            <input type="text" class="form-control simple-border" name="adults" value="1" style="width: 20%;">
+                            <input type="text" class="form-control simple-border" name="adults" value="1">
                             <button type="button" class="btn btn-primary btn-sm btn-circle" data-target="adults" data-action="increase">
                                 <span class="fa fa-plus"></span>
                             </button>
                         </div>
                     </div>
-                    <div class="form-group my-2">
+                    <div class="children choose">
                         <div class="input-group my-2">
-                            <label for="children" class="input-group-text col-2">Children</label>
+                            <label for="children" class="input-group-text col-2" id="input-group-text">Children</label>
                             <button type="button" class="btn btn-primary btn-sm btn-circle" data-target="children" data-action="decrease">
                                 <span class="fa fa-minus"></span>
                             </button>
-                            <input type="text" class="form-control simple-border" pattern="\d*" name="children" value="0" style="width:20%;">
+                            <input type="text" class="form-control simple-border" pattern="\d*" name="children" value="0">
                             <button type="button" class="btn btn-primary btn-sm btn-circle" data-target="children" data-action="increase">
                                 <span class="fa fa-plus"></span>
                             </button>
                         </div>
                     </div>
-                    <div class="form-group my-2">
+                    <div class="pet choose">
                         <div class="input-group my-2" id="pets">
                             <label for="pets" class="input-group-text col-4">Pets</label>
-                            <div class="d-inline input-radio-wrapper pets-wrapper">
+                            <div class="pets-wrapper">
                                 <input id="pets_no" type="radio" name="pets" value="No" checked>
                                 <label for="pets_no">No</label>
                             </div>
-                            <div class="d-inline input-radio-wrapper">
+                            <div class="pets-wrapper">
                                 <input id="pets_yes" type="radio" name="pets" value="Yes">
                                 <label for="pets_yes">Yes</label>
                             </div>
@@ -159,26 +161,26 @@
     </main>
     <footer>    
         <section class="icon">  
-            <p style="text-align: center;">
+            <article>
                 <a href="#" class="fa-brands fa-facebook"></a>
                 <a href="#" class="fa-brands fa-twitter"></a>
-            </p>
-            <p style="text-align: center;">
+            </article>
+            <p>
                 <a href="/ourvans.html">Our vans</a>
                 <a href="/rentalinfo.html">Rental info</a>
                 <a href="/photo-gallery.html">Photo gallery</a>
                 <a href="/aboutus.html">About us</a> 
                 <a href="/travel-tips.html">Travel tips</a>
             </p>
-            <p style="text-align: center;">
+            <p>
                 <a href="mailto:campervanrental@mail.com">campervanrental@mail.com</a> | Vancouver, British Columbia
             </p>
-            <p style="text-align: center;">
+            <p>
                 <a class="book" href="#">Book now</a>
             </p>
         </section>
         <div class="copyright"> 
-        <p style="text-align: center;">&nbsp;COPYRIGHT &copy; Camper Van Rental | CREATED BY MONIKA, LUCUS AND NATT 
+        <p>&nbsp;COPYRIGHT &copy; Camper Van Rental | CREATED BY MONIKA, LUCUS AND NATT 
         </p>
         </div>
     </footer> 

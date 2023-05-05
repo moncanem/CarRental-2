@@ -1,0 +1,129 @@
+@media (min-width: 700px){
+    header {
+        height: 8vh;
+    }
+
+    a {
+        font-size: 16px;
+    }
+    
+    .navlogo img {
+        width: 7vw; 
+        height: 6vh;
+    }
+    
+    details {
+        top: 20%;
+        padding: 15px;
+        > .nav-summary  {
+            font-size: 16px;
+            font-weight: 500;
+        }
+        
+    }
+    
+    .container-fluid {
+        padding: 5px;
+    }
+    
+    .banner-text { 
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+
+        h1 {
+            font-size: 32px;
+            font-weight: 800;
+            text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+        }
+
+        strong {
+            font-size: 20px;
+            font-weight: 400;
+        }
+        
+    }
+    /* datepicker */
+    .date-reservation {
+        padding: 30px;
+
+    }
+      
+    .reservation_box {
+        max-width: 70vh;
+        strong {
+            font-size: 20px;
+        }
+
+        button {
+            width: 80%;
+
+        }
+
+        > form {
+            column-gap: 10px;
+            flex-direction: row;
+        }
+
+        input[type="date"] {
+            padding: 12px;
+            font-size: 14px;
+            width: 90%;
+        }
+    }
+      
+    .hidden-calendar {
+        display: block;
+    }
+      
+    .adults, .children {
+        width: 60%;
+    }
+
+    .pet {
+        width: 60%;
+        
+    }
+
+    .input-group {
+        width: 70%;
+        border-radius: 10px;
+
+        > label {
+            font-size: 16px;
+            padding-left: 10px;
+        }
+    }
+
+    #input-group-text{
+        width: 35%;
+    }
+
+    #pets {
+        font-size: 16px;
+    }
+
+    .about{
+        font-size: 16px;
+        row-gap: 5vh;
+        padding: 4vh;
+    }
+      
+    footer {
+        p {
+            font-size: 14px;
+        }
+    }
+
+    .fa-brands {
+        font-size: 24px;
+    }
+    
+    .book {
+        font-size: 16px;        
+    }
+   
+}

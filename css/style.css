@@ -16,6 +16,7 @@ a {
 p {
   color: dimgray;
   line-height: 1.5;
+  font-size: 14px;
 }
 
 html,
@@ -68,6 +69,9 @@ form {
   header {
     height: 10vh;
   }
+  a {
+    font-size: 12px;
+  }
   nav {
     display: flex;
     height: 60px;
@@ -76,7 +80,7 @@ form {
     justify-content: space-between;
   }
   .navlogo img {
-    width: 8vw;
+    width: 12vw;
     height: 7vh;
   }
   ul.nav {
@@ -110,6 +114,14 @@ form {
     justify-content: center;
     padding: 5px;
   }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+  }
   .banner-text {
     position: absolute;
     top: 50%;
@@ -129,14 +141,14 @@ form {
   /* datepicker */
   .date-reservation {
     background-color: #469597;
-    padding: 50px 0;
+    padding: 20px 0;
+    display: flex;
   }
   .reservation_box {
-    padding: 10px;
-    max-width: 800px;
+    padding: 20px;
+    width: 40vh;
     background-color: white;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     align-items: center;
     text-align: center;
     display: flex;
@@ -146,24 +158,35 @@ form {
     font-size: 16px;
   }
   .reservation_box input[type=date] {
-    padding: 5px;
+    padding: 10px;
     font-size: 14px;
+    width: 100%;
   }
   .reservation_box button {
     align-items: center;
-    margin-left: 2%;
+  }
+  .reservation_box > form {
+    row-gap: 1vh;
   }
   .hidden-calendar {
     display: block;
   }
-  .form-group {
+  .adults, .children {
     display: flex;
-    justify-content: center;
     align-items: center;
     text-align: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .pet {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 70%;
   }
   .input-group {
-    max-width: 200px;
+    width: 80%;
     border: 1px solid #BBC6C8;
     border-radius: 5px;
   }
@@ -174,7 +197,12 @@ form {
     width: 20%;
     background-color: white;
   }
+  #input-group-text {
+    width: 40%;
+  }
   #pets {
+    display: flex;
+    align-items: center;
     font-size: 14px;
     -moz-column-gap: 2vh;
          column-gap: 2vh;
@@ -190,9 +218,12 @@ form {
   footer {
     background-color: #f2f2f2;
     padding: 20px 0;
-    font-size: 16px;
     color: #555;
     text-align: center;
+  }
+  footer p {
+    align-items: center;
+    font-size: 12px;
   }
   footer > section {
     display: flex;
@@ -233,5 +264,104 @@ form {
   .book:hover {
     background-color: #E5E3E4;
     border-radius: 15px;
+  }
+}
+@media (min-width: 700px) {
+  header {
+    height: 8vh;
+  }
+  a {
+    font-size: 16px;
+  }
+  .navlogo img {
+    width: 7vw;
+    height: 6vh;
+  }
+  details {
+    top: 20%;
+    padding: 15px;
+  }
+  details > .nav-summary {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .container-fluid {
+    padding: 5px;
+  }
+  .banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .banner-text h1 {
+    font-size: 32px;
+    font-weight: 800;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  .banner-text strong {
+    font-size: 20px;
+    font-weight: 400;
+  }
+  /* datepicker */
+  .date-reservation {
+    padding: 30px;
+  }
+  .reservation_box {
+    max-width: 70vh;
+  }
+  .reservation_box strong {
+    font-size: 20px;
+  }
+  .reservation_box button {
+    width: 80%;
+  }
+  .reservation_box > form {
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+    flex-direction: row;
+  }
+  .reservation_box input[type=date] {
+    padding: 12px;
+    font-size: 14px;
+    width: 90%;
+  }
+  .hidden-calendar {
+    display: block;
+  }
+  .adults, .children {
+    width: 60%;
+  }
+  .pet {
+    width: 60%;
+  }
+  .input-group {
+    width: 70%;
+    border-radius: 10px;
+  }
+  .input-group > label {
+    font-size: 16px;
+    padding-left: 10px;
+  }
+  #input-group-text {
+    width: 35%;
+  }
+  #pets {
+    font-size: 16px;
+  }
+  .about {
+    font-size: 16px;
+    row-gap: 5vh;
+    padding: 4vh;
+  }
+  footer p {
+    font-size: 14px;
+  }
+  .fa-brands {
+    font-size: 24px;
+  }
+  .book {
+    font-size: 16px;
   }
 }/*# sourceMappingURL=style.css.map */

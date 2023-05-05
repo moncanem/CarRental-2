@@ -3,6 +3,10 @@
         height: 10vh;
     }
 
+    a {
+        font-size: 12px;
+    }
+
     nav {
         display: flex;
         height: 60px;
@@ -12,7 +16,7 @@
     }
     
     .navlogo img {
-        width: 8vw; 
+        width: 12vw; 
         height: 7vh;
     }
     
@@ -51,6 +55,15 @@
         justify-content: center;
         padding: 5px;
     }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+    }
     
     .banner-text { 
         position: absolute;
@@ -75,17 +88,17 @@
     /* datepicker */
     .date-reservation {
         background-color: #469597;
-        padding: 50px 0;
+        padding: 20px 0;
+        display: flex;
 
     }
       
     .reservation_box {
-        padding: 10px;
-        max-width: 800px;
-        // padding: 20px;
+        padding: 20px;
+        width: 40vh;
         background-color: white;
         border-radius: 5px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        // box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         align-items: center;
         text-align: center;
         display: flex;
@@ -96,14 +109,18 @@
         }
 
         input[type="date"] {
-            padding: 5px;
+            padding: 10px;
             font-size: 14px;
+            width: 100%;
         }
 
         button {
             align-items: center;
-            margin-left: 2%;
 
+        }
+
+        > form {
+            row-gap: 1vh;
         }
     }
       
@@ -111,15 +128,25 @@
         display: block;
     }
       
-    .form-group {
+    .adults, .children {
         display: flex;
-        justify-content: center;
         align-items: center;
         text-align: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .pet {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        width: 70%;
+        
     }
 
     .input-group {
-        max-width: 200px;
+        width: 80%;
         border: 1px solid #BBC6C8 ;
         border-radius: 5px;
 
@@ -132,7 +159,13 @@
         }
     }
 
+    #input-group-text{
+        width: 40%;
+    }
+
     #pets {
+        display: flex;
+        align-items: center;
         font-size: 14px;
         column-gap: 2vh;
     }
@@ -149,9 +182,12 @@
     footer {
         background-color: #f2f2f2;
         padding: 20px 0;
-        font-size: 16px;
         color: #555;
         text-align: center;
+        p {
+            align-items: center;
+            font-size: 12px;
+        }
         > section {
             // justify-content: space-around;
             display: flex;
