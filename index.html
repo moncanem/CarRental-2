@@ -8,19 +8,22 @@
     <!-- fontawesome -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.spinner/0.2.8/jquery.spinner.min.js"></script>
     <!-- google front -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
     <!-- bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
     <!-- css -->
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <div id="root">
+    <!-- <div id="root">
 
-    </div>
+    </div> -->
     <header>
         <div class="container-fluid">
             <nav>
@@ -76,21 +79,56 @@
                 </h1>
             </div>
         </section>
-
+        <section class="date-reservation">
+            <article class="container">
+                <aside class="reservation_box">
+                    <strong>When are you going?</strong>
+                    <br>
+                    <form action="/avaiabledatescheck.html" id="booking-form" method="get" target="_blank">
+                        <input type="text" id="pick_up" name="pick_up" value="" required>
+                        <input type="text" id="return" name="return" value="" required>
+                        <button type="submit" class="go booking-link tracking-link" value="" title="Find">search</button>
+                    </form>
+                    <br>
+                    <p class="text-center py-0 my-0">
+                        <small></small>
+                    </p>
+                </aside>
+                <div class="select-section">
+                    <div class="adults choose">
+                        <label for="adults">Adults</label>
+                        <input name="adults" id="adults" type="text" value="1">
+                    </div>
+                    <div class="children choose">
+                        <label for="children">Children</label>
+                        <input name="children" id="children" type="text" value="0">
+                    </div>
+                    <div class="pet choose" id="pets">
+                        <label for="pets" class="input-group-text col-4">Pets</label>
+                        <div class="d-inline input-radio-wrapper pets-wrapper">
+                            <input id="pets_no" type="radio" name="pets" value="No" checked>
+                            <label for="pets_no">No</label>
+                        </div>
+                        <div class="d-inline input-radio-wrapper">
+                            <input id="pets_yes" type="radio" name="pets" value="Yes">
+                            <label for="pets_yes">Yes</label>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
         <!-- datepicker -->
-        <div class="date-reservation">
+        <!-- <div class="date-reservation">
             <div class="container">
                 <p>
                     <div class="reservation_box">
                         <strong>When are you going?</strong>
                         <br>
                         <form action="/avaiabledatescheck.html" id="booking-form" method="get" target="_blank">
-                            <!-- <label class="divider" for="date-in">From</label> -->
+                            
                             <input type="date" id="pick_up" name="pick_up" value="" placeholder="Pick up date" required>
                             <input type="date" id="return" name="return" value="" placeholder="Return date" required>
                             <button href="#" class="btn btn-primary">Search</button>
-                            <!-- <button type="submit" class="go booking-link tracking-link" value="" title="Find">search</button> -->
-                            <!-- <div class="hidden-calendar" id="daterangepickerHp"></div> -->
                         </form>
                         <br>
                         <p class="text-center py-0 my-0">
@@ -136,7 +174,7 @@
                     </div>
                 </p>
             </div>
-        </div>
+        </div> -->
         <section class="about">
             <article>
                 <h2>About Us</h2>

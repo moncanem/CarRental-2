@@ -1,6 +1,7 @@
 @media (min-width: 300px) {
     header {
-        display: flex;
+        display: inline;
+        // padding: 9px;
         min-height: 10vh;
         a {
             font-size: 12px;
@@ -95,6 +96,17 @@
         display: flex;
 
     }
+
+    #booking-form .hasDatepicker {
+        width: 145px;
+        height: 14px;
+        display: inline-block;
+        margin: 0 auto;
+        padding: 3px 0 2px 8px;
+        border: 1px solid #3b3f2f;
+        background: url(https://cdnjs.cloudflare.com/ajax/libs/ionicons/1.5.2/png/512/calendar.png) 132px 2px no-repeat;
+        background-size: 16px 16px;
+    }
       
     .reservation_box {
         padding: 20px;
@@ -118,7 +130,11 @@
         }
 
         button {
+            background-color: $primary-color;
+            border-radius: 10px;
+            border: 1px solid blue;
             align-items: center;
+            width: 20vh;
 
         }
 
@@ -129,6 +145,19 @@
       
     .hidden-calendar {
         display: block;
+    }
+
+    .select-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        padding-top: 3vh;
+        row-gap: 1vh;
+        width: 80%;
+       
+        
     }
       
     .adults, .children {
@@ -145,13 +174,9 @@
         text-align: center;
         justify-content: center;
         width: 70%;
-        
-    }
-
-    .input-group {
-        width: 80%;
         border: 1px solid #BBC6C8 ;
         border-radius: 5px;
+
 
         > label {
             font-size: 13px;
@@ -160,7 +185,22 @@
             width: 20%;
             background-color: white;
         }
+        
     }
+
+    // .input-group {
+    //     width: 80%;
+    //     border: 1px solid #BBC6C8 ;
+    //     border-radius: 5px;
+
+    //     > label {
+    //         font-size: 13px;
+    //         display: flex;
+    //         padding: 2px;
+    //         width: 20%;
+    //         background-color: white;
+    //     }
+    // }
 
     #input-group-text{
         width: 40%;

@@ -2,7 +2,7 @@
 
     header{
         height: 15vh;
-        padding: 3vh;
+        padding: 2vh;
         a {
             font-size: 20px;
             font-weight: 600;
@@ -44,6 +44,14 @@
     .date-reservation {
         padding: 20px;
     }
+
+    button {
+        width: fit-content;
+        border-radius: 10px;
+        font-size: 18px;
+
+    }
+
       
     .reservation_box {
         padding: 20px;

@@ -67,7 +67,7 @@ form {
 
 @media (min-width: 300px) {
   header {
-    display: flex;
+    display: inline;
     min-height: 10vh;
   }
   header a {
@@ -147,6 +147,16 @@ form {
     padding: 20px 0;
     display: flex;
   }
+  #booking-form .hasDatepicker {
+    width: 145px;
+    height: 14px;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 3px 0 2px 8px;
+    border: 1px solid #3b3f2f;
+    background: url(https://cdnjs.cloudflare.com/ajax/libs/ionicons/1.5.2/png/512/calendar.png) 132px 2px no-repeat;
+    background-size: 16px 16px;
+  }
   .reservation_box {
     padding: 20px;
     width: 40vh;
@@ -166,13 +176,27 @@ form {
     width: 100%;
   }
   .reservation_box button {
+    background-color: #007bff;
+    border-radius: 10px;
+    border: 1px solid blue;
     align-items: center;
+    width: 20vh;
   }
   .reservation_box > form {
     row-gap: 1vh;
   }
   .hidden-calendar {
     display: block;
+  }
+  .select-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding-top: 3vh;
+    row-gap: 1vh;
+    width: 80%;
   }
   .adults, .children {
     display: flex;
@@ -187,13 +211,10 @@ form {
     text-align: center;
     justify-content: center;
     width: 70%;
-  }
-  .input-group {
-    width: 80%;
     border: 1px solid #BBC6C8;
     border-radius: 5px;
   }
-  .input-group > label {
+  .pet > label {
     font-size: 13px;
     display: flex;
     padding: 2px;
@@ -308,6 +329,10 @@ form {
   .date-reservation {
     padding: 30px;
   }
+  #booking-form .hasDatepicker {
+    width: 145px;
+    height: 20px;
+  }
   .reservation_box {
     width: 70vh;
   }
@@ -315,7 +340,7 @@ form {
     font-size: 20px;
   }
   .reservation_box button {
-    width: 80%;
+    width: 90%;
   }
   .reservation_box > form {
     -moz-column-gap: 10px;
@@ -368,7 +393,7 @@ form {
 @media (min-width: 1000px) {
   header {
     height: 15vh;
-    padding: 3vh;
+    padding: 2vh;
   }
   header a {
     font-size: 20px;
@@ -403,6 +428,12 @@ form {
   /* datepicker */
   .date-reservation {
     padding: 20px;
+  }
+  button {
+    width: -moz-fit-content;
+    width: fit-content;
+    border-radius: 10px;
+    font-size: 18px;
   }
   .reservation_box {
     padding: 20px;
