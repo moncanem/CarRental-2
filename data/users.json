@@ -9,7 +9,7 @@
         "id": 2,
         "full_name": "Bill Petofi",
         "email": "bpetofi1@cpanel.net",
-        "password": "SUpt1uVJ"
+        "password": "1310"
     },
     {
         "id": 3,
@@ -298,5 +298,9 @@
         "full_name": "Bernete Meininger",
         "email": "bmeininger1d@aboutads.info",
         "password": "NxVJtnC0"
+    },
+    {
+        "name": "Aya",
+        "email": "lucas.corradini.2003@gmail.com"
     }
 ]
