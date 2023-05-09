@@ -35,26 +35,29 @@ $(document).ready(function() {
         );
     }
 
-    $("#adults").spinner({
-        max: 6,
-        min: 1 
-    });
+    // $("#adults").spinner({
+    //     max: 6,
+    //     min: 1 
+    // });
 
-    $("#children").spinner({
-        max: 4,
-        min: 0 
-    });
+    // $("#children").spinner({
+    //     max: 4,
+    //     min: 0 
+    // });
 
     $("#booking-form").submit(function(e) {
         e.preventDefault(); // Prevent form from submitting
         
         let StartFrom = $("#us-pick_up").val();
         let ReturnDate = $("#us-return").val();
-        let adults = $("#adults").val();
-        let children = $("#children").val();
+        // let adults = $("#adults").val();
+        // let children = $("#children").val();
 
         // Replace with actual booking URL
-        const bookingURL = `https://avaiabledatescheck.html/book?StartFrom=${StartFrom}&ReturnDate=${ReturnDate}&adults=${adults}&children=${children}&pets=${$("input[name='pets']:checked").val()}`;
+        // const bookingURL = `https://avaiabledatescheck.html/book?StartFrom=${StartFrom}&ReturnDate=${ReturnDate}&adults=${adults}&children=${children}&pets=${$("input[name='pets']:checked").val()}`;
+        // window.open(bookingURL, '_blank');
+
+        const bookingURL = `https://avaiabledatescheck.html/book?StartFrom=${StartFrom}&ReturnDate=${ReturnDate}.val()}`;
         window.open(bookingURL, '_blank');
     });
 });
