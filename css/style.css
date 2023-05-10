@@ -485,4 +485,7 @@ form {
   .icon a:hover {
     color: #469597;
   }
+  .images {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */

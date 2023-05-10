@@ -61,3 +61,10 @@ $(document).ready(function() {
         window.open(bookingURL, '_blank');
     });
 });
+
+function showImg(event) {
+    event.preventDefault();
+    $(".images").css("display", "flex")
+};
+
+$("form button").click(showImg);

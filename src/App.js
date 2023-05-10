@@ -2,6 +2,19 @@ import logo from './logo.svg';
 import './App.css';
 import Homepage from './components/Homepage';
 import { useEffect, useState } from 'react';
+import { Link, Outlet } from 'react-router-dom';
+
+function Navigation(){
+  return(
+    <>
+      <nav>
+        <Link to="/home">Homepage</Link>
+        <Link to="/homne/cars">CarsList</Link>
+      </nav>
+      <Outlet/>
+    </>
+  );
+}
 
 function Cars(props){
   return(
@@ -38,6 +51,7 @@ function App() {
   return (
     <div className="App">
       <Homepage/>
+      <Navigation/>
       {
         carsList.map(
           (car) => (
