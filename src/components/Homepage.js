@@ -16,7 +16,7 @@ class Homepage extends React.Component {
                     content="This is our Homepage"
                     title="Home"
                 />
-                <h1>This is our HomePage</h1>
+                <h1>HomePage</h1>
                 <Outlet/>
                 <Footer
                     className="footer-content"
