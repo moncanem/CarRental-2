@@ -1,6 +1,4 @@
 import React from 'react';
-import { Header } from './Header';
-import { Footer } from './Footer';
 
 class Homepage extends React.Component {
     constructor(props) {
@@ -22,22 +20,12 @@ class Homepage extends React.Component {
                 </article>
             </section>
         );
-    }
+      };
 
     render(){
         return(
             <section>
-                <Header
-                    class_component="home-header"
-                    content="This is our Homepage"
-                    title="Home"
-                />
                 <MainContent />
-                <Footer
-                    className="footer-content"
-                    title="Footer"
-                    content="This is our footer"
-                />
             </section>
         );
     }
