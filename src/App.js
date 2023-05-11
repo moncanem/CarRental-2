@@ -2,8 +2,6 @@ import logo from './logo.svg';
 import './App.css';
 import Homepage from './components/Homepage';
 import { useEffect, useState } from 'react';
-import { Header } from './components/Header';
-import { Footer } from './components/Footer';
 import { Link, Outlet } from 'react-router-dom';
 
 function Navigation(){
@@ -43,13 +41,16 @@ function MainContent(props) {
       <img src={props.src} alt={props.alt} />
       <figcaption>
         <h3>{props.carModel}</h3>
-        <ul>
-          <li>{props.price}</li>
-          <li>{props.year}</li>
-          <li>{props.maxAdults}</li>
-          <li>{props.maxChildren}</li>
-          <li>{pets}</li>
-        </ul>
+        <strong>Price: </strong>
+        <p>{props.price}</p>
+        <strong>Year: </strong>
+        <p>{props.year}</p>
+        <strong>Max Adults: </strong>
+        <p>{props.maxAdults}</p>
+        <strong>Max Children: </strong>
+        <p>{props.maxChildren}</p>
+        <strong>Pets: </strong>
+        <p>{pets}</p>
       </figcaption>
     </figure>
   );
@@ -102,11 +103,6 @@ function App() {
         return(
             <section>
               <Navigation/>
-                <Header
-                    class_component="home-header"
-                    content="This is our Homepage"
-                    title="Car rental"
-                />
                 {
                     carList.map(
                         (car) => (
@@ -122,11 +118,6 @@ function App() {
                         )
                     )
                 }
-                <Footer
-                    className="footer-content"
-                    title="Footer"
-                    content="This is our footer"
-                />
             </section>
         );
 }
