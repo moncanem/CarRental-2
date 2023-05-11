@@ -27,7 +27,7 @@
     }
     
     .banner-text { 
-        text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        // text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         h1 {
             font-size: 60px;
             font-weight: 900;
@@ -55,7 +55,8 @@
       
     .reservation_box {
         padding: 20px;
-        width: 100%;  
+        width: 70%;
+        height: 20vh;  
         strong {
             font-size: 20px;
         }
@@ -67,29 +68,34 @@
             
         }
 
-        > form {
-            row-gap: 2vh;
+        button[type="submit"]{
+            font-size: 16px;
+            width: 12vh;
         }
+
+        // > form {
+        //     row-gap: 2vh;
+        // }
     }
       
-    .adults, .children {
-        width: 60%;
-    }
+    // .adults, .children {
+    //     width: 60%;
+    // }
 
-    .pet {
-        width: 30%;
+    // .pet {
+    //     width: 30%;
         
-    }
+    // }
 
-    .input-group {
-        width: 60%;
+    // .input-group {
+    //     width: 60%;
 
-        > label {
-            align-items: center;
-            font-size: 15px;
-            width: 30%;
-        }
-    }
+    //     > label {
+    //         align-items: center;
+    //         font-size: 15px;
+    //         width: 30%;
+    //     }
+    // }
 
     .about{
         row-gap: 6vh;
@@ -97,6 +103,7 @@
     }
       
     footer {
+        row-gap: 2vh;
         a {
             font-size: 16px;
         }

@@ -77,6 +77,7 @@
         text-align: center;
 
         h1 {
+            text-align: center;
             font-size: 32px;
             font-weight: 800;
             text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -116,6 +117,7 @@
         // box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         align-items: center;
         text-align: center;
+        justify-content: center;
         display: flex;
         flex-direction: column;
 
@@ -129,17 +131,18 @@
             width: 100%;
         }
 
-        button {
+        button[type="submit"] {
             background-color: $primary-color;
             border-radius: 10px;
             border: 1px solid blue;
             align-items: center;
+            text-align: center;
             width: 20vh;
 
         }
 
         > form {
-            row-gap: 1vh;
+            row-gap: 2vh;
         }
     }
       

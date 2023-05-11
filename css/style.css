@@ -133,6 +133,7 @@ form {
     text-align: center;
   }
   .banner-text h1 {
+    text-align: center;
     font-size: 32px;
     font-weight: 800;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -164,6 +165,7 @@ form {
     border-radius: 5px;
     align-items: center;
     text-align: center;
+    justify-content: center;
     display: flex;
     flex-direction: column;
   }
@@ -175,15 +177,16 @@ form {
     font-size: 14px;
     width: 100%;
   }
-  .reservation_box button {
+  .reservation_box button[type=submit] {
     background-color: #007bff;
     border-radius: 10px;
     border: 1px solid blue;
     align-items: center;
+    text-align: center;
     width: 20vh;
   }
   .reservation_box > form {
-    row-gap: 1vh;
+    row-gap: 2vh;
   }
   .hidden-calendar {
     display: block;
@@ -339,8 +342,8 @@ form {
   .reservation_box strong {
     font-size: 20px;
   }
-  .reservation_box button {
-    width: 90%;
+  .reservation_box button[type=submit] {
+    width: 10vh;
   }
   .reservation_box > form {
     -moz-column-gap: 10px;
@@ -414,9 +417,6 @@ form {
   details {
     display: none;
   }
-  .banner-text {
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  }
   .banner-text h1 {
     font-size: 60px;
     font-weight: 900;
@@ -437,7 +437,8 @@ form {
   }
   .reservation_box {
     padding: 20px;
-    width: 100%;
+    width: 70%;
+    height: 20vh;
   }
   .reservation_box strong {
     font-size: 20px;
@@ -448,26 +449,16 @@ form {
     -moz-column-gap: 10px;
          column-gap: 10px;
   }
-  .reservation_box > form {
-    row-gap: 2vh;
-  }
-  .adults, .children {
-    width: 60%;
-  }
-  .pet {
-    width: 30%;
-  }
-  .input-group {
-    width: 60%;
-  }
-  .input-group > label {
-    align-items: center;
-    font-size: 15px;
-    width: 30%;
+  .reservation_box button[type=submit] {
+    font-size: 16px;
+    width: 12vh;
   }
   .about {
     row-gap: 6vh;
     padding: 6vh;
+  }
+  footer {
+    row-gap: 2vh;
   }
   footer a {
     font-size: 16px;
