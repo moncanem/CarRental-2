@@ -1,6 +1,7 @@
 import React from 'react';
 import { Header } from './Header';
 import { Footer } from './Footer';
+import { Link, Outlet } from 'react-router-dom';
 
 class Homepage extends React.Component {
     constructor(props) {
@@ -15,6 +16,8 @@ class Homepage extends React.Component {
                     content="This is our Homepage"
                     title="Home"
                 />
+                <h1>This is our HomePage</h1>
+                <Outlet/>
                 <Footer
                     className="footer-content"
                     title="Footer"
