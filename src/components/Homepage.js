@@ -1,12 +1,13 @@
 import React from 'react';
-import { Header } from './Header';
+import { Header } from './Header.js';
+import { Main } from './Main';
 import { Footer } from './Footer';
+
 
 class Homepage extends React.Component {
     constructor(props) {
         super(props);
     }
-
     render(){
         return(
             <section>
@@ -15,6 +16,7 @@ class Homepage extends React.Component {
                     content="This is our Homepage"
                     title="Home"
                 />
+                <Main/>
                 <Footer
                     className="footer-content"
                     title="Footer"
@@ -23,7 +25,6 @@ class Homepage extends React.Component {
             </section>
         );
     }
-
 }
 
 export default Homepage;

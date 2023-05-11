@@ -1,38 +1,168 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+body{
+  background-image: url(/img/pexels-yara-alana-16386642.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+main{
+  display: flex;
+  column-gap: 5vh;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h1{
+  font-size: 30px;
+}
+
+.warning{
+  font-size: 12px;
+  color: red;
+  font-weight: 600;
+}
+
+.warning-2{
+  font-size: 12px;
+  color: red;
+  font-weight: 600;
+}
+
+.btnLogin{
+  width: 19vh;
+}
+
+.show{
+  width: 19vh;
+}
+
+.cancel{
+  width: 19vh;
+}
+
+.login{
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 5%;
+  height: 70vh;
+  width: 45vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  row-gap: 4vh;
+  box-shadow: 1px 5px 10px rgba(0, 0, 0, .9);
+}
+
+.sign  {
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 5%;
+  height: 70vh;
+  width: 45vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 7vh;
+  box-shadow: 1px 5px 10px rgba(0, 0, 0, .9);
+}
+
+
+button{
+  width: 20vh;
+  padding: 4%;
+  border-radius: 12px;
+  border: 1px solid white;
+  background-color: #A6C4C5;
+  font-weight: 400;
+  transition: .4s;
+}
+
+button:hover{
+  cursor: pointer;
+  color: whitesmoke;
+  border: 1px solid black;
+}
+
+input{
+  padding: 5%;
+  border: 1px solid black;
+  border-radius: 12px;
+  width: 35vh;
+  box-shadow: 1px 5px 10px rgba(0, 0, 0, .3);
+}
+
+input:focus{
+  outline: 1px solid #288990;
+}
+
+.inputRed{
+  border: 1px solid red;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2vh;
+}
+
+::placeholder{
+  color: black;
+}
+
+.create{
+  padding: 6%;
+  width: 38vh;
+  font-size: 15px;
+  background-color: #288990;
+}
+
+ul{
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  column-gap: 5vh;
+}
+
+.icons{
+  display: flex;
+  flex-direction: column;
+  row-gap: 2vh;
+}
+
+a{
+  border: 1px solid black;
+  border-radius: 50%;
+  height: 5vh;
+  width: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  transition: .6s;
+}
+
+a:hover{
+  background-color: black;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.log{
+  height: 7vh;
+  width: 38vh;
+  background-color: #288990;
 }
