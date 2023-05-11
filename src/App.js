@@ -103,6 +103,7 @@ function App() {
         return(
             <section>
               <Navigation/>
+              <Homepage/>
                 {
                     carList.map(
                         (car) => (

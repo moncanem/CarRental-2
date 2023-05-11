@@ -1,0 +1,323 @@
+@media (min-width: 300px) {
+    header {
+        display: inline;
+        // padding: 9px;
+        min-height: 10vh;
+        a {
+            font-size: 12px;
+        }
+    }
+
+
+    nav {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        height: 60px;
+        padding: 10px;
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+    .navlogo img {
+        width: 12vw; 
+        height: 7vh;
+    }
+    
+    ul.nav {
+        display: none;
+    }
+    
+    details {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: end;
+        z-index: 1;
+        position: relative;
+        top: 10%;
+        left: 0;
+        right: 0;
+        background-color: white;
+        padding: 10px;
+
+        > .nav-summary  {
+            font-size: 14px;
+            font-weight: 400;
+            background-color: white;
+            color: $primary-color;
+        }
+        
+    }
+
+    .container-fluid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        padding: 5px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .banner-text { 
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+
+        h1 {
+            text-align: center;
+            font-size: 32px;
+            font-weight: 800;
+            text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+        }
+
+        strong {
+            font-size: 20px;
+            font-weight: 400;
+        }
+        
+    }
+    /* datepicker */
+    .date-reservation {
+        background-color: #469597;
+        padding: 20px 0;
+        display: flex;
+
+    }
+
+    #booking-form .hasDatepicker {
+        width: 145px;
+        height: 14px;
+        display: inline-block;
+        margin: 0 auto;
+        padding: 3px 0 2px 8px;
+        border: 1px solid #3b3f2f;
+        background: url(https://cdnjs.cloudflare.com/ajax/libs/ionicons/1.5.2/png/512/calendar.png) 132px 2px no-repeat;
+        background-size: 16px 16px;
+    }
+      
+    .reservation_box {
+        padding: 20px;
+        width: 40vh;
+        background-color: white;
+        border-radius: 5px;
+        // box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+
+        strong {
+            font-size: 16px;
+        }
+
+        input[type="date"] {
+            padding: 10px;
+            font-size: 14px;
+            width: 100%;
+        }
+
+        button[type="submit"] {
+            background-color: $primary-color;
+            border-radius: 10px;
+            border: 1px solid blue;
+            align-items: center;
+            text-align: center;
+            width: 20vh;
+
+        }
+
+        > form {
+            row-gap: 2vh;
+        }
+    }
+      
+    .hidden-calendar {
+        display: block;
+    }
+
+    .select-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        padding-top: 3vh;
+        row-gap: 1vh;
+        width: 80%;
+       
+        
+    }
+      
+    .adults, .children {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .pet {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        width: 70%;
+        border: 1px solid #BBC6C8 ;
+        border-radius: 5px;
+
+
+        > label {
+            font-size: 13px;
+            display: flex;
+            padding: 2px;
+            width: 20%;
+            background-color: white;
+        }
+        
+    }
+
+    // .input-group {
+    //     width: 80%;
+    //     border: 1px solid #BBC6C8 ;
+    //     border-radius: 5px;
+
+    //     > label {
+    //         font-size: 13px;
+    //         display: flex;
+    //         padding: 2px;
+    //         width: 20%;
+    //         background-color: white;
+    //     }
+    // }
+
+    #input-group-text{
+        width: 40%;
+    }
+
+    #pets {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        column-gap: 2vh;
+    }
+
+    .about{
+        align-items: center;
+        text-align: justify;
+        justify-content: center;
+        // width: 100%;
+        row-gap: 4vh;
+        padding: 3vh;
+        > article {
+            padding: 1%;
+            row-gap: 20px;
+        }
+    }
+      
+    footer {
+        background-color: #f2f2f2;
+        padding: 20px 0;
+        color: #555;
+        text-align: center;
+        row-gap: 1vh;
+        p {
+            align-items: center;
+            font-size: 12px;
+        }
+        > section {
+            // justify-content: space-around;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            row-gap: 1vh;
+        }
+    }
+
+    .fa-brands {
+        display: inline-block;
+        font-size: 22px;
+        color: #555;
+        padding: 2vh;
+        transition: color 0.3s ease-in-out;
+        text-decoration: none;
+    }
+    
+    .fa-brands:hover {
+        color: #469597;
+    }
+    
+    .icon a {
+        text-decoration: none;
+        color: black;
+        /* margin: 0 10px; */
+        padding: 1%;
+        transition: color 0.3s ease-in-out;
+    }
+    
+    .icon a:hover {
+        color: #469597;
+    }
+    
+    .book {
+        display: inline-block;
+        background-color: #007bff;
+        color: #fff;
+        font-size: 16px;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: 0.4s;
+    }
+    
+    .book:hover {
+        background-color: #E5E3E4 ;
+        border-radius: 15px;
+    }
+
+    .rentalinfo{
+        padding: 3vh;
+        row-gap: 1vh;
+        > h2 {
+            font-size: 28px;
+        }
+
+        > h4 {
+            font-size: 16px;
+            font-weight: 300;
+        }
+
+        > article {
+            text-align: left;
+            // row-gap: 2vh;
+        }
+
+        ul {
+            font-size: 16px;
+            font-weight: 700;
+            padding: 2vh;
+            list-style-type:disc;
+        }
+
+        p {
+            font-size: 14px;
+            font-weight: 400;
+        }
+    }
+
+     
+}
