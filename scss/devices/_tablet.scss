@@ -34,14 +34,14 @@
         text-align: center;
 
         h1 {
-            font-size: 32px;
+            font-size: 50px;
             font-weight: 800;
             text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 
         }
 
         strong {
-            font-size: 20px;
+            font-size: 28px;
             font-weight: 400;
         }
         
@@ -129,6 +129,25 @@
     
     .book {
         font-size: 16px;        
+    }
+
+    .rentalinfo{
+        padding: 4vh;
+        > h2 {
+            font-size: 32px;
+        }
+
+        > h4 {
+            font-size: 18px;
+        }
+
+        ul {
+            font-size: 18px;
+        }
+
+        p {
+            font-size: 16px;
+        }
     }
    
 }
