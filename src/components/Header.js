@@ -3,7 +3,7 @@ export function Header(props){
         <header className={props.class_component}>
             <section>
                 <h1>{props.title}</h1>
-                <p>{props.content}</p>
+                <strong>{props.content}</strong>
             </section>
         </header>
     );
